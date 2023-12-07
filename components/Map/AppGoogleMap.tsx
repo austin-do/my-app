@@ -1,0 +1,27 @@
+'use client';
+
+import { GoogleMap, Marker, useLoadScript } from '@react-google-maps/api';
+import React from 'react';
+
+import { ADDRESS_GOOGLE_MAPS_COORDINATES } from '@/constants/constants';
+
+const AppGoogleMap = () => {
+  const { isLoaded } = useLoadScript({
+    googleMapsApiKey:
+      process.env.PUBLIC_NEXT_GOOGLE_MAPS_API_KEY ||
+      'AIzaSyAsJZmv8Vxfx8h7aT6l7pPI9U2DN3UrCh8',
+  });
+
+  if (!isLoaded) return <div>loading...</div>;
+  return (
+    <GoogleMap
+      zoom={14}
+      center={ADDRESS_GOOGLE_MAPS_COORDINATES}
+      mapContainerStyle={{ width: '50vw', height: '50vh' }}
+    >
+      <Marker position={ADDRESS_GOOGLE_MAPS_COORDINATES} />
+    </GoogleMap>
+  );
+};
+
+export default AppGoogleMap;

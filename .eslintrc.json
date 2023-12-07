@@ -1,0 +1,42 @@
+{
+  "extends": [
+    "next/core-web-vitals", 
+    "plugin:prettier/recommended",
+    "airbnb",
+    "airbnb-typescript"
+  ],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "plugins": [
+    "prettier"
+  ],
+  "rules": {
+    "prettier/prettier": "error",
+    "operator-linebreak": 0,
+    "object-curly-newline": 0,
+    "prefer-const": "error",
+    "prefer-arrow-callback": 1,
+    "no-unused-vars": 2,
+    "react/jsx-props-no-spreading": "off",
+    "react/function-component-definition": [
+      2,
+      {
+        "namedComponents": "arrow-function",
+        "unnamedComponents": "arrow-function"
+      }
+    ],
+    "import/order": ["error", {
+      "newlines-between": "always",
+      "pathGroups": [
+        {
+          "pattern": "@app/**",
+          "group": "external",
+          "position": "after"
+        }
+      ],
+      "distinctGroup": false
+    }]
+  
+  }
+}
