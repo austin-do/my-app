@@ -7,7 +7,7 @@ import { ADDRESS_GOOGLE_MAPS_COORDINATES } from '@/constants/constants';
 
 const AppGoogleMap = () => {
   const { isLoaded } = useLoadScript({
-    googleMapsApiKey: process.env.PUBLIC_NEXT_GOOGLE_MAPS_API_KEY || '',
+    googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY || '',
   });
 
   if (!isLoaded) return <div>loading...</div>;
