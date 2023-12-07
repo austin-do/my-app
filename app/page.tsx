@@ -2,6 +2,7 @@ import { Button, Carousel, Typography } from 'antd';
 import React from 'react';
 import { Box } from '@mui/material';
 import Image from 'next/image';
+import Link from 'next/link';
 
 import pic1 from '../public/images/1.jpg';
 import pic2 from '../public/images/2.jpg';
@@ -65,11 +66,18 @@ const Home = () => (
           weekday. Bring your friends, family, & loves one together and enjoy
           this fun moment together!
         </Typography>
-        <Button
-          style={{ width: '40%', color: '#f7f7f7', backgroundColor: '#99cced' }}
-        >
-          Let the Fun Begin
-        </Button>
+        <Link href="/contact-us">
+          <Button
+            style={{
+              minWidth: '150px',
+              width: '40%',
+              color: '#f7f7f7',
+              backgroundColor: '#99cced',
+            }}
+          >
+            Let the Fun Begin
+          </Button>
+        </Link>
       </Box>
     </Box>
     <Carousel
