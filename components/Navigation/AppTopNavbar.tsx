@@ -3,13 +3,14 @@
 import * as React from 'react';
 import Image from 'next/image';
 // eslint-disable-next-line import/no-extraneous-dependencies
-import { FacebookFilled, InstagramFilled } from '@ant-design/icons';
-import { Button, Space } from 'antd';
 import Link from 'next/link';
-import { Box } from '@mui/material';
+import { Box, IconButton } from '@mui/material';
 import { usePathname } from 'next/navigation';
+import { Facebook, Instagram, Twitter } from '@mui/icons-material';
 
 import logo from '../../public/images/DenDen.png';
+
+import TemporaryDrawer from './AppDrawerNavMenu';
 
 const navItems = [
   {
@@ -34,20 +35,11 @@ const ResponsiveAppBar = () => {
         alignItems: 'center',
         justifyContent: 'space-between',
         paddingInline: '2rem',
+        background: 'white',
       }}
     >
-      <Box sx={{ display: { md: 'none' } }}>
-        <button type="button" className="inline-flex items-center md:hidden">
-          {/* Menu icon */}
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="40"
-            height="40"
-            viewBox="0 0 24 24"
-          >
-            <path fill="#fff" d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z" />
-          </svg>
-        </button>
+      <Box sx={{ display: { md: 'none', flex: 1 } }}>
+        <TemporaryDrawer />
       </Box>
       <div
         style={{
@@ -56,7 +48,7 @@ const ResponsiveAppBar = () => {
         }}
       >
         <Image
-          style={{ marginRight: 1, height: '100%', width: 'auto' }}
+          style={{ marginRight: 1, height: '100%', width: 'auto', flex: 1 }}
           src={logo}
           alt="Den Den Logo"
         />
@@ -74,7 +66,7 @@ const ResponsiveAppBar = () => {
             flexDirection: 'row',
           }}
         >
-          <Box sx={{ display: 'flex', gap: '1rem', marginRight: '1rem' }}>
+          <Box sx={{ display: 'flex', gap: '1rem', marginRight: '1rem', alignItems: 'center' }}>
             {navItems.map((item) => (
               <Link
                 style={{
@@ -90,13 +82,23 @@ const ResponsiveAppBar = () => {
             ))}
           </Box>
         </Box>
-        <Space>
-          <Button icon={<FacebookFilled />} href="https://www.google.com" />
-          <Button
-            icon={<InstagramFilled />}
-            href="https://www.instagram.com/dendendori/?hl=en"
-          />
-        </Space>
+        <Box sx={{ display: { xs: 'none', sm: 'none', md: 'flex' }, flexDirection: 'row', flex: 1 }}>
+          <Link href="google.com">
+            <IconButton aria-label="delete" size="large">
+              <Facebook fontSize="inherit" />
+            </IconButton>
+          </Link>
+          <Link href="https://www.instagram.com/dendendori/?hl=en">
+            <IconButton aria-label="delete" size="large">
+              <Instagram fontSize="inherit" />
+            </IconButton>
+          </Link>
+          <Link href="google.com">
+            <IconButton aria-label="delete" size="large">
+              <Twitter fontSize="inherit" />
+            </IconButton>
+          </Link>
+        </Box>
       </div>
     </div>
   );
