@@ -9,10 +9,12 @@ import pic2 from '../public/images/2.jpg';
 import pic3 from '../public/images/3.jpg';
 import pic4 from '../public/images/4.jpg';
 
+import { PRIMARY_COLOUR, SECONDARY_COLOUR } from '@/constants/constants';
+
 const picArray = [pic1, pic2, pic3, pic4];
 
 const headerStyle: React.CSSProperties = {
-  color: '#99cced',
+  color: PRIMARY_COLOUR,
   fontWeight: 600,
   textTransform: 'uppercase',
 };
@@ -26,9 +28,9 @@ const Home = () => (
     <Box
       className="text-card"
       sx={{
-        background: '#f7f7f7',
+        background: SECONDARY_COLOUR,
         display: 'flex',
-        paddingBlock: '5rem',
+        paddingBlock: { xs: '2rem', sm: '2rem', md: '5rem' },
         paddingInline: { xs: '10vw', sm: '10vw', md: '10vw', xl: '20vw' },
         justifyContent: 'center',
       }}
@@ -42,7 +44,7 @@ const Home = () => (
           width: { xs: '100%', sm: '100%', md: '50%' },
         }}
       >
-        <div style={headerStyle}>More than just Claw Machines Games!</div>
+        <div style={headerStyle}>Welcome to Den Den Dori</div>
         <Box
           sx={{
             fontWeight: '800',
@@ -50,7 +52,7 @@ const Home = () => (
             textTransform: 'capitalize',
           }}
         >
-          Adding fun to your life
+          More than just Claw Machines
         </Box>
         <Typography
           style={{
@@ -59,12 +61,13 @@ const Home = () => (
           }}
         >
           We are your go-to claw machine hangout. Our goal is to make sure
-          everyone who comes in & has a great time and win some awesome prizes.
+          everyone who comes in has a great time and goes home with some awesome
+          prizes and memories.
           <br />
           <br />
-          We know that life is already hard and maybe boring enough during the
-          weekday. Bring your friends, family, & loves one together and enjoy
-          this fun moment together!
+          Explore and discover not only fun claw machine games,
+          but an electric and vibrant Japanese ambiance, photobooths,
+          gachapon machines, and more! What are you waiting for?
         </Typography>
         <Link href="/contact-us">
           <Button
