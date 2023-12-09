@@ -29,7 +29,7 @@ const App: React.FC = () => (
   <>
     <Box>
       <Typography>
-        <Title>Contact Us!</Title>
+        <Title>Contact Us</Title>
         <Paragraph>
           We are more than happy to receive feedback and questions at any time!
           Want to see more of your favourite brand, want to make suggestions for
@@ -57,26 +57,23 @@ const App: React.FC = () => (
         requiredMark={false}
       >
         <Form.Item<FieldType>
-          label="Email"
           name="email"
-          rules={[{ required: true, message: 'Please input your email!' }]}
+          rules={[{ required: true, message: 'Please input your email' }]}
         >
-          <Input />
+          <Input placeholder="Email" />
         </Form.Item>
 
         <Form.Item<FieldType>
-          label="Subject"
           name="subject"
-          rules={[{ required: true, message: 'Please input your password!' }]}
+          rules={[{ required: true, message: 'Please input a subject' }]}
         >
-          <Input />
+          <Input placeholder="Subject" />
         </Form.Item>
         <Form.Item<FieldType>
-          label="Message"
           name="message"
-          rules={[{ required: true, message: 'Please input your password!' }]}
+          rules={[{ required: true, message: 'Please input your message' }]}
         >
-          <Input.TextArea />
+          <Input.TextArea placeholder="Enter your message" autoSize={{ minRows: 6 }} />
         </Form.Item>
         <Box sx={{ display: 'flex', justifyContent: 'flex-end' }}>
           <Form.Item>
@@ -84,7 +81,7 @@ const App: React.FC = () => (
               type="primary"
               htmlType="submit"
               style={{
-                color: SECONDARY_COLOUR,
+                color: 'white',
                 backgroundColor: PRIMARY_COLOUR,
               }}
             >

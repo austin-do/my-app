@@ -44,7 +44,9 @@ const ContactUs = () => (
       >
         <Box sx={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
           <Typography>
-            <Title>Come Visit Us</Title>
+            <Title>
+              Visit Us!
+            </Title>
           </Typography>
           {contactInfoData.map((item) => (
             <Box>

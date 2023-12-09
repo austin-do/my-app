@@ -15,7 +15,7 @@ const AppGoogleMap = () => {
     <GoogleMap
       zoom={14}
       center={ADDRESS_GOOGLE_MAPS_COORDINATES}
-      mapContainerStyle={{ width: '50vw', height: '50vh' }}
+      mapContainerStyle={{ width: '70vw', height: '50vh' }}
     >
       <Marker position={ADDRESS_GOOGLE_MAPS_COORDINATES} />
     </GoogleMap>
