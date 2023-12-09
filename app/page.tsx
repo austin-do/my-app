@@ -4,14 +4,12 @@ import { Box } from '@mui/material';
 import Image from 'next/image';
 import Link from 'next/link';
 
-import pic1 from '../public/images/1.jpg';
-import pic2 from '../public/images/2.jpg';
-import pic3 from '../public/images/3.jpg';
-import pic4 from '../public/images/4.jpg';
+import pic1 from '../public/images/test1.jpg';
+import pic2 from '../public/images/test2.jpg';
 
 import { PRIMARY_COLOUR, SECONDARY_COLOUR } from '@/constants/constants';
 
-const picArray = [pic1, pic2, pic3, pic4];
+const picArray = [pic1, pic2];
 
 const headerStyle: React.CSSProperties = {
   color: PRIMARY_COLOUR,
@@ -144,26 +142,25 @@ const Home = () => (
         <Box>
           <div style={headerStyle}>Step 1: Buy Tokens</div>
           <div style={paragraphStyle}>
-            To start, you will need to buy tokens to play. Each machine costs
-            around 3 to 8 tokens per round so keep that in mind when purchasing
-            tokens!
+            To start, you&apos;re going to need to load up on plenty of tokens to play.
+            Each machine costs around 3 to 8 tokens per round so keep that in mind!
           </div>
         </Box>
         <Box>
           <div style={headerStyle}>Step 2: Play and Have Fun!</div>
           <div style={paragraphStyle}>
-            Each plushie is worth a certain amount of points. This means you can
-            win whatever is easy for you instead of spending too many coins on
-            one plush (points for plushies are stated on the machine)!
+            Each prize is worth a certain amount of points. We suggest testing and searching for
+            which prize you can win the easiest for the most amount of points.
+            Or just play for what toy you think is coolest!
+            (points for plushies are stated on the machine)!
           </div>
         </Box>
         <Box>
           <div style={headerStyle}>STEP 3: UPGRADE/TRADE (OPTIONAL)</div>
           <div style={paragraphStyle}>
-            You could always trade-in unwanted plushies that you win to upgrade
+            We offer trade-ins for unwanted plushies that you win to upgrade
             to another prize at the front counter. Upgrading gives you more
-            selections for cuter and nicer plushies, but this is all up to you
-            and your preference!
+            selections for cuter and nicer prizes!
           </div>
         </Box>
       </Box>
