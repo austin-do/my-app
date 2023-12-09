@@ -57,9 +57,11 @@ const ContactUs = () => (
       <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
         <Paragraph style={{ textAlign: 'center' }}>
           “My partner and I love going to Den Den Dori for dates everytime we watch a movie.
-          They have the most adorable plush dolls from my favorite anime and so many beautiful backgrounds for
-          photos plus the staff are so wonderful and caring which makes it such a memorable experience.
-          We can't wait for our next trip to Den Den Dori!”
+          They have the most adorable plush dolls from my favorite anime and so many beautiful
+          backgrounds for
+          photos plus the staff are so wonderful and
+          caring which makes it such a memorable experience.
+          We can&apos;t wait for our next trip to Den Den Dori!”
         </Paragraph>
         <Link style={{ textDecorationColor: PRIMARY_COLOUR }} href="https://www.google.com/search?q=den+den+dori+kanata+reviews&sca_esv=589414700&sxsrf=AM9HkKnq-dl6fzkyfPhQIMbPot6D6zytlA%3A1702142576345&ei=cKJ0ZcbQFMCmptQPu_yKqAk&ved=0ahUKEwjGyPqc74KDAxVAk4kEHTu-ApUQ4dUDCBA&uact=5&oq=den+den+dori+kanata+reviews&gs_lp=Egxnd3Mtd2l6LXNlcnAiG2RlbiBkZW4gZG9yaSBrYW5hdGEgcmV2aWV3c0i8F1DTBFjYFHADeACQAQCYAYIBoAGcB6oBAzUuNLgBA8gBAPgBAcICBBAjGCfiAwQYASBBiAYB&sclient=gws-wiz-serp">
           <Paragraph style={{ color: PRIMARY_COLOUR, fontWeight: 400, fontSize: 16, textAlign: 'center' }}>
