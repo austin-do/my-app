@@ -9,7 +9,7 @@ import Paragraph from 'antd/es/typography/Paragraph';
 import Title from 'antd/es/typography/Title';
 import Link from 'next/link';
 
-import { PRIMARY_COLOUR, SECONDARY_COLOUR } from '@/constants/constants';
+import { PRIMARY_COLOUR } from '@/constants/constants';
 
 const onFinish = (values: any) => {
   console.log('Success:', values);
