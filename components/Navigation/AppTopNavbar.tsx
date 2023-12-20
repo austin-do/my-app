@@ -6,26 +6,13 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Box, IconButton } from '@mui/material';
 import { usePathname } from 'next/navigation';
-import { Facebook, Instagram, Twitter } from '@mui/icons-material';
 
 import logo from '../../public/images/DenDen.png';
 
 import TemporaryDrawer from './AppDrawerNavMenu';
 
-const navItems = [
-  {
-    displayText: 'Home',
-    path: '/' || '/home',
-  },
-  {
-    displayText: 'About',
-    path: '/about',
-  },
-  {
-    displayText: 'Contact Us',
-    path: '/contact-us',
-  },
-];
+import { NAV_ITEMS, SOCIAL_LINKS } from '@/constants/constants';
+
 const ResponsiveAppBar = () => {
   const path = usePathname() || '';
   return (
@@ -67,8 +54,9 @@ const ResponsiveAppBar = () => {
           }}
         >
           <Box sx={{ display: 'flex', gap: '1rem', marginRight: '1rem', alignItems: 'center' }}>
-            {navItems.map((item) => (
+            {NAV_ITEMS.map((item) => (
               <Link
+                key={item.displayText}
                 style={{
                   fontSize: '1.5rem',
                   fontWeight: 500,
@@ -83,21 +71,13 @@ const ResponsiveAppBar = () => {
           </Box>
         </Box>
         <Box sx={{ display: { xs: 'none', sm: 'none', md: 'flex' }, flexDirection: 'row', flex: 1 }}>
-          <Link href="google.com">
-            <IconButton aria-label="delete" size="large">
-              <Facebook fontSize="inherit" />
-            </IconButton>
-          </Link>
-          <Link href="https://www.instagram.com/dendendori/?hl=en">
-            <IconButton aria-label="delete" size="large">
-              <Instagram fontSize="inherit" />
-            </IconButton>
-          </Link>
-          <Link href="google.com">
-            <IconButton aria-label="delete" size="large">
-              <Twitter fontSize="inherit" />
-            </IconButton>
-          </Link>
+          {SOCIAL_LINKS.map((item) => (
+            <Link href={item.url} key={item.name}>
+              <IconButton aria-label="delete" size="large">
+                {item.icon}
+              </IconButton>
+            </Link>
+          ))}
         </Box>
       </div>
     </div>

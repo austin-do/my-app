@@ -13,22 +13,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Instagram, Facebook, Twitter } from '@mui/icons-material';
 
-import { PRIMARY_COLOUR, SECONDARY_COLOUR } from '@/constants/constants';
-
-const navItems = [
-  {
-    displayText: 'Home',
-    path: '/' || '/home',
-  },
-  {
-    displayText: 'About',
-    path: '/about',
-  },
-  {
-    displayText: 'Contact Us',
-    path: '/contact-us',
-  },
-];
+import { NAV_ITEMS, PRIMARY_COLOUR, SECONDARY_COLOUR } from '@/constants/constants';
 
 const Transition = React.forwardRef((
   props: TransitionProps & {
@@ -79,8 +64,9 @@ const FullScreenDialog = () => {
         </AppBar>
         <Box sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100%', gap: '10%' }}>
 
-          {navItems.map((item) => (
+          {NAV_ITEMS.map((item) => (
             <Link
+              key={item.displayText}
               style={{
                 fontSize: '1.5rem',
                 fontWeight: 500,

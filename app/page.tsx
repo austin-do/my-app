@@ -8,6 +8,7 @@ import pic1 from '../public/images/test1.jpg';
 import pic2 from '../public/images/test2.jpg';
 
 import { PRIMARY_COLOUR, SECONDARY_COLOUR } from '@/constants/constants';
+import AppEmblaCarousel from '@/components/Carousel/EmblaCarousel';
 
 const picArray = [pic1, pic2];
 
@@ -93,7 +94,7 @@ const Home = () => (
       }}
     >
       {picArray.map((pic) => (
-        <div style={{ position: 'relative', width: '500px', height: '300px' }}>
+        <div style={{ position: 'relative', width: '500px', height: '300px' }} key={pic.src}>
           <Image
             priority
             src={pic}
