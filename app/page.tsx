@@ -8,7 +8,6 @@ import pic1 from '../public/images/test1.jpg';
 import pic2 from '../public/images/test2.jpg';
 
 import { PRIMARY_COLOUR, SECONDARY_COLOUR } from '@/constants/constants';
-import AppEmblaCarousel from '@/components/Carousel/EmblaCarousel';
 
 const picArray = [pic1, pic2];
 
