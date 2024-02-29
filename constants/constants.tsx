@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import React from 'react';
 import Paragraph from 'antd/es/typography/Paragraph';
 import { Facebook, Instagram } from '@mui/icons-material';
@@ -17,10 +18,10 @@ const TikTokIcon = () => (
 export const PRIMARY_COLOUR = '#99cced';
 export const SECONDARY_COLOUR = '#f7f7f7';
 export const ADDRESS_GOOGLE_MAPS_COORDINATES = {
-  lat: 45.279898396048885,
-  lng: -75.86293846150105,
+  lat: 45.411245111572846,
+  lng: -75.70681472918866,
 };
-export const ADDRESS = '103 Huntsman Cres, Ottawa, ON K2M 1H8';
+export const ADDRESS = '691 Somerset St W, Ottawa, ON K1R 6P5';
 export const EMAIL = 'dendendori@gmail.com';
 export const PHONE_NUMBER = '613-400-2909';
 
@@ -33,7 +34,7 @@ export const SOCIAL_LINKS = [
   {
     name: 'instagram',
     icon: <Instagram fontSize="inherit" />,
-    url: 'https://www.instagram.com/dendendori/?hl=en',
+    url: 'https://www.instagram.com/dendenclaw/?hl=en',
   },
   {
     name: 'tiktok',
@@ -59,10 +60,10 @@ export const NAV_ITEMS = [
 
 export const FREQUENTLY_ASKED_QUESTIONS_LIST = [
   {
-    title: 'How Does Den den dori work?',
+    title: 'How Does Den Den Claw work?',
     text:
   <Paragraph>
-    Den Den Dori is a claw-machine store.
+    Den Den Claw is a claw-machine store.
     You can buy the game tokens at the front reception and start playing!
     What you win from the machines are all yours!
     You can either bring them home, or, to add a little bit of fun,
@@ -102,6 +103,15 @@ export const FREQUENTLY_ASKED_QUESTIONS_LIST = [
   <Paragraph>
     Sometimes luck won&apos;t be in your favour... and that&apos;s okay!
     Ask the staff at the counter to make sure you go home with that prize you&apos;ve been eyeing!
+  </Paragraph>,
+  },
+  {
+    title: 'What does Den Den mean?',
+    text:
+  <Paragraph>
+    Den is from the Japanese character 電, meaning electricity.
+    We were inspired during a trip to Japan by their vibrant entertainment scene and the electric energy of claw machine arcades.
+    We hope to bring a piece of that back for you to experience as well!
   </Paragraph>,
   },
   {

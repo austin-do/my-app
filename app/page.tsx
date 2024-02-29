@@ -42,7 +42,7 @@ const Home = () => (
           width: { xs: '100%', sm: '100%', md: '50%' },
         }}
       >
-        <div style={headerStyle}>Welcome to Den Den Dori</div>
+        <div style={headerStyle}>Welcome to Den Den Claw</div>
         <Box
           sx={{
             fontWeight: '800',
