@@ -26,7 +26,7 @@ const AppFooter = () => (
     }}
   >
     <Box sx={{ maxWidth: '50%' }}>
-      <Paragraph style={footerTextStyle}> &copy; 2023 Den Den Dori</Paragraph>
+      <Paragraph style={footerTextStyle}> &copy; 2023 Den Den Play Ltd.</Paragraph>
       <Paragraph style={footerTextStyle}>{ADDRESS}</Paragraph>
       <Paragraph style={footerTextStyle}>{PHONE_NUMBER}</Paragraph>
       <Paragraph style={footerTextStyle}>{EMAIL}</Paragraph>

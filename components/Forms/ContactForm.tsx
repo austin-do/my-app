@@ -8,15 +8,31 @@ import { Box } from '@mui/material';
 import Paragraph from 'antd/es/typography/Paragraph';
 import Title from 'antd/es/typography/Title';
 import Link from 'next/link';
+import toast from 'react-hot-toast';
 
 import { PRIMARY_COLOUR } from '@/constants/constants';
 
-const onFinish = (values: any) => {
-  console.log('Success:', values);
+const sendEmail = async (data: any) => {
+  const response = await fetch('/api/send', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(data),
+  });
+
+  if (response.status === 200) {
+    toast.success('Hey! Your message was sent, we will get back to you as soon as possible!');
+  }
 };
 
 const onFinishFailed = (errorInfo: any) => {
-  console.log('Failed:', errorInfo);
+  toast.success('Oops! Something went wrong on our end... Please call or email us!');
+  console.log(errorInfo);
+};
+
+const onFinish = (values: any) => {
+  sendEmail(values);
 };
 
 type FieldType = {
