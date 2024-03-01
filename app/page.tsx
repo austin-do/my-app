@@ -4,8 +4,8 @@ import { Box } from '@mui/material';
 import Image from 'next/image';
 import Link from 'next/link';
 
-import pic1 from '../public/images/test1.jpg';
-import pic2 from '../public/images/test2.jpg';
+import pic1 from '../public/images/Artboard 1.png';
+import pic2 from '../public/images/Artboard 2.png';
 
 import { PRIMARY_COLOUR, SECONDARY_COLOUR } from '@/constants/constants';
 
@@ -81,34 +81,36 @@ const Home = () => (
         </Link>
       </Box>
     </Box>
-    <Carousel
-      autoplay
-      style={{
-        background: 'black',
-        height: '50vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        overflow: 'hidden',
-      }}
+    <Box sx={{
+      height: { sm: '25vh', md: '40vh', lg: '50vh', xl: '70vh' },
+    }}
     >
-      {picArray.map((pic) => (
-        <div style={{ position: 'relative', width: '500px', height: '300px' }} key={pic.src}>
-          <Image
-            priority
-            src={pic}
-            alt="Picture of the author"
-            sizes="100vw"
-            style={{
-              width: '100%',
-              height: 'auto',
-            }}
-            width={500}
-            height={300}
-          />
-        </div>
-      ))}
-    </Carousel>
+
+      <Carousel
+        autoplay
+        style={{
+          background: 'white',
+          display: 'flex',
+          justifyContent: 'center',
+          height: 'auto',
+          overflow: 'hidden',
+        }}
+      >
+        {picArray.map((pic) => (
+          <div key={pic.src}>
+            <Image
+              priority
+              src={pic}
+              alt="Picture"
+              style={{
+                width: '100%',
+                height: '100%',
+              }}
+            />
+          </div>
+        ))}
+      </Carousel>
+    </Box>
     <div
       className="text-card"
       style={{

@@ -7,7 +7,7 @@ import Link from 'next/link';
 import { Box, IconButton } from '@mui/material';
 import { usePathname } from 'next/navigation';
 
-import logo from '../../public/images/DenDen.png';
+import logo from '../../public/images/DenDenLogo.png';
 
 import TemporaryDrawer from './AppDrawerNavMenu';
 
@@ -35,7 +35,7 @@ const ResponsiveAppBar = () => {
         }}
       >
         <Image
-          style={{ marginRight: 1, height: '100%', width: 'auto', flex: 1 }}
+          style={{ marginRight: 1, height: '75px', width: 'auto', flex: 1 }}
           src={logo}
           alt="Den Den Logo"
         />

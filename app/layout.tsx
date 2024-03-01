@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 const RootLayout = ({ children }: { children: React.ReactNode }) => (
   <html lang="en">
     <body className={inter.className} style={{ margin: 0 }}>
-      <Toaster position="bottom-right" toastOptions={{ duration: 10000 }} />
+      <Toaster position="bottom-left" toastOptions={{ duration: 10000 }} />
       <AppTopNavbar />
       {children}
       <AppFooter />
