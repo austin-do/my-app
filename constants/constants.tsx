@@ -114,11 +114,4 @@ export const FREQUENTLY_ASKED_QUESTIONS_LIST = [
     We hope to bring a piece of that back for you to experience as well!
   </Paragraph>,
   },
-  {
-    title: 'When will you be open?',
-    text:
-  <Paragraph>
-    We are working on finding a location! Visit this site or our socials for updates. See you soon!
-  </Paragraph>,
-  },
 ];

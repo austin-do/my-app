@@ -26,8 +26,9 @@ const ContactUs = () => (
         <Typography>
           <Title>About Us</Title>
           <Paragraph>
-            Located in Kanata - we are the only
-            claw machine store in Ottawa (with the friendliest employees around!)
+            Located in the heart of Chinatown - we are the only
+            claw machine store in Ottawa with a focus on helping customers learn to win
+            and the trade-in prize system.
           </Paragraph>
           <Paragraph>
             Have a little taste of some Japanese inspiration brought to Ottawa!
