@@ -18,8 +18,11 @@ const contactInfoData = [
     value: (
       <div>
         <div>Sun-Monday: 1:00PM-9:30PM</div>
+        <br />
         <div>Tuesday: Closed</div>
+        <br />
         <div>Wednesday-Thursday: 1:00PM-9:30PM</div>
+        <br />
         <div>Fri-Sat: 1:00PM-10:30PM</div>
       </div>
     ),
