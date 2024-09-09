@@ -4,7 +4,7 @@ import { Box } from '@mui/material';
 import Image from 'next/image';
 import Link from 'next/link';
 
-import pic1 from '../public/images/Artboard 1.png';
+import pic1 from '../public/images/Artboard.png';
 import pic2 from '../public/images/Artboard 2.png';
 
 import { PRIMARY_COLOUR, SECONDARY_COLOUR } from '@/constants/constants';

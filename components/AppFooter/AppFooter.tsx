@@ -34,8 +34,12 @@ const AppFooter = () => (
     <Box sx={{ maxWidth: '50%' }}>
       <Paragraph style={footerTextStyle}>Business Hours:</Paragraph>
       <Paragraph style={footerTextStyle}>
-        <div>Mon-Thu: 12:00PM-11PM</div>
-        <div>Fri-Sun: 11:00AM-12AM</div>
+        <div>
+          <div>Sun-Monday: 1:00PM-9:30PM</div>
+          <div>Tuesday: Closed</div>
+          <div>Wednesday-Thursday: 1:00PM-9:30PM</div>
+          <div>Fri-Sat: 1:00PM-10:30PM</div>
+        </div>
       </Paragraph>
     </Box>
   </Footer>
